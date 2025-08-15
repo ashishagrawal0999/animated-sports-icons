@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+}
+
+#back{
+    width: 100%;
+    height: 100vh;
+
+}
+
+#back img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+}
+
+#workingarea{
+    margin: 0 auto;
+    width: 80%;                 
+    max-width: 1920px;
+    height: 100vh;
+    /* background-color: #000000; */
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+#nav{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#nav img{
+    height: 40px;
+    /* margin: 10px 20px ; */
+}
+
+#nleft , #nright{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#nav a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    pointer-events: all;
+
+}
+
+/* 100% width of parent  */
+/* max-width: 1920px; if if it is exceeding 1920px */
+
+#hero{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);        
+    /* Height Wise Center Krne Ke Liye */
+}
+
+#heroleft{
+    min-width: 50%;
+}
+
+#heroleft .elem {
+    height: 9vw;
+    overflow: hidden;
+}
+
+#heroleft .elem h1{
+    line-height: 0.9;
+    font-family: "kajiro";
+    color: #fff;
+    font-weight:100;
+    font-size: 11vw;
+}
+
+#heroright{
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #fff;
+
+}
+
+#heroright p{
+
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+    margin-bottom: 54px;
+}
+
+#heroleft button{
+     margin-top: 2vw;
+     font-family: "kajiro";
+     font-size: 2.6vw;
+     color: black;
+     padding: 0.4vw 2vw;
+     pointer-events: all;
+}
